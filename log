@@ -1,1 +1,9 @@
+Q3
+
+[8:40PM] After understanding the requirements, I started off with the backend immediately. I made a small test.html just to see if my backend was working. I created a database to store the data. I didn't use postman because I've always done it with the test.html way. Tested /api/register/ with POST and it was successful registration with validation errors working. Starting the frontend now
+
+[9PM] Made a very simple frontend. I only coded the App.js file for now. Im running the Djanog server in another terminal to check if my front and backend are connected. I added CORS so that the React app can successfully send POST requests to the Django API. backend validation is important even if React checks inputs because frontend validation can be easily bypassed and backend makes sure of data integrity no matter how the request arrives.
+
+[9:20PM] CORS is a browser security feature that blocks requests from one port to another by default. I ran into CORS errors when trying to connect React (port 3000) to Django (port 8000). Fixed it by installing django-cors-headers and whitelisting localhost:3000 in settings.py.
+Making the repo+ final report. 
 
