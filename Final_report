@@ -1,0 +1,22 @@
+# Category 3: Fullstack(Django + React)
+
+Built a registration API where users register for an event. Ensured strict backend validation (even if frontend is bypassed) and handled CORS when connecting React to Django.
+
+## Backend (Django + DRF)
+- Created a Registration model and Serializer with custom validation.
+- Validation:valid email, password ≥8 chars, age as positive integer ≥18.
+- Returns back 201 Created on success, 400 Bad Request with clear errors if failed
+
+## Frontend(React)
+- Very simple form with email, password,age
+- POSTs data to Django API.
+- Displays success or error messages.
+
+## Critical Analysis
+- **Backend validation necessary** because frontend checks can be bypassed (Postman, curl, etc.). Backend checks for data integrity.
+- **CORS**:it blocks requests from one port to another by default. 
+Ran into browser blocking requests between React(port 3000) and Django (port 8000). Fixed using django-cors-headers.
+
+
+## Conclusion
+Successfully connected fullstack application with proper validation and CORS handling.
