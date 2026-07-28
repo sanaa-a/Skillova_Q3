@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  background: linear-gradient(160deg, #eaf1e3 0%, #f4f6ee 50%, #e3ecd9 100%);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  position: relative;
+  background: #fbfaf6;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(60, 90, 50, 0.12);
+  padding: 40px;
+  padding-top: 46px;
+  max-width: 420px;
+  width: 100%;
+  border: 1px solid #cddcc0;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #7ba876, #b7d4ab, #d6e6c9);
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #4f7a45;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  color: #223019;
+}
+
+.subtext {
+  color: #5c6b52;
+  font-size: 14px;
+  margin: 0 0 28px;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #33402c;
+  margin-bottom: 16px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #c9dbba;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fdfcf8;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6fa564;
+  box-shadow: 0 0 0 3px rgba(111, 165, 100, 0.15);
+}
+
+.field-error {
+  color: #c05c4a;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #6fa564, #a3c99a);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #142b0d;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.banner {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.banner.error {
+  background: #fbeeea;
+  color: #a1503e;
+}
+
+.banner.success {
+  background: #e2f0d8;
+  color: #3c6b30;
+}
