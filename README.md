@@ -9,8 +9,8 @@ rejected with a 400 and clear error messages.
 ## Project structure
 
  Skillova_q3/
-   ├── backend/ → Django API (registration endpoint + validation)
-   └── frontend/ → React form (talks to the Django API)
+  - ├── backend/ → Django API (registration endpoint + validation)
+  - └── frontend/ → React form (talks to the Django API)
 
 
 ## Prerequisites
