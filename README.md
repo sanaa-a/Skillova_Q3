@@ -31,8 +31,9 @@ python -m venv venv
 venv\Scripts\activate
 
 3. Install dependencies:
-
-pip install django djangorestframework django-cors-headers
+```
+   pip install -r requirements.txt
+```
 
 4. Apply migrations:
 
@@ -47,12 +48,10 @@ python manage.py runserver
 ## Running the frontend (React)
 
 1. Open a **second** terminal in the `frontend` folder:
-
-cd frontend
+  cd frontend
 
 2. Install dependencies:
-
-npm install
+  npm install
 
 3. Start the app:
 
