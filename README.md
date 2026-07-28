@@ -9,8 +9,8 @@ rejected with a 400 and clear error messages.
 ## Project structure
 
 Skillova_q3/
-├── backend/ → Django API (registration endpoint + validation)
-└── frontend/ → React form (talks to the Django API)
+ ├── backend/ → Django API (registration endpoint + validation)
+ └── frontend/ → React form (talks to the Django API)
 
 
 ## Prerequisites
@@ -22,9 +22,9 @@ Skillova_q3/
 ## Running the backend (Django)
 
 1. Open a terminal in the `backend` folder:
-
-cd backend
-
+```
+ cd backend
+```
 2. Create and activate a virtual environment:
 
 python -m venv venv
@@ -36,27 +36,29 @@ venv\Scripts\activate
 ```
 
 4. Apply migrations:
-
-python manage.py migrate
-
+```
+ python manage.py migrate
+```
 5. Run the server:
-
-python manage.py runserver
-
+``` 
+ python manage.py runserver
+```
    The API will be live at `http://127.0.0.1:8000/api/register/`.
 
 ## Running the frontend (React)
 
 1. Open a **second** terminal in the `frontend` folder:
+```
   cd frontend
-
+```
 2. Install dependencies:
+```
   npm install
-
+```
 3. Start the app:
-
+```
 npm start
-
+```
    Opens automatically at `http://localhost:3000`.
 
 ## Using it
